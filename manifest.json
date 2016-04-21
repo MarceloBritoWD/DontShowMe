@@ -1,0 +1,16 @@
+{
+  "name": "Don't Show Me",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Description here.",
+  "icons" : {
+    "16" : "icon128.png",
+    "48" : "icon128.png",
+    "128" : "icon128.png"
+  },
+  "content_scripts": [{
+    "matches": [ "*://www.facebook.com/*" ],
+    "js": [ "app.js" ],
+    "css": [ "app.css" ]
+  }]
+}
