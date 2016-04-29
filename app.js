@@ -1,6 +1,6 @@
 console.log('Dont Show Me is running!');
 
-function tal(){
+function run(){
 
 	setInterval(function(){ 
 		// var container = document.querySelectorAll("._5pcb._4b0l"); /* Perfil de Usuario */
@@ -22,4 +22,4 @@ function tal(){
 	}, 500);
 };
 
-tal();
+run();
