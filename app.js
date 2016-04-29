@@ -1,17 +1,25 @@
-console.log('Ta funcionando!');
+console.log('Dont Show Me is running!');
 
 function tal(){
-	var bla = document.querySelectorAll(".userContent p");
-
-	console.log(bla[0].innerText);
 
 	setInterval(function(){ 
-		for (var i = 0; i <= bla.length; i++) {
-			bla[i].innerHTML = "blahahahaha";
+		// var container = document.querySelectorAll("._5pcb._4b0l"); /* Perfil de Usuario */
+		var container = document.querySelectorAll("._4ikz");
+		var textArea = document.querySelectorAll(".userContent");
+
+		for (var i = 0; i <= container.length; i++) {
+			
+			// container[i].style.display = 'none';
+
+			if (container.indexOf("Esporte Interativo")) {
+				container[i].style.display = 'none';
+				container[i].innerHTML = "Postagem Escrota";
+				console.log("Workou");
+			};
+
+
 		};
 	}, 500);
-		
-
 };
 
 tal();
